@@ -13,6 +13,7 @@
 </svg>
     </clipboard-copy>
   </div></div>
+  <p dir="auto">Switch to the repo folder</p>
   <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>cd crud-laravel vue
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cd laravel-realworld-example-app" tabindex="0" role="button">
