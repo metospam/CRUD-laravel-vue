@@ -14,39 +14,35 @@ export default {
     isActive(index) {
       return this.currentPage === index ? 'active' : '';
     },
-
-    calculateDisplayedPages() {
-      const startPage = Math.max(1, this.currentPage - Math.floor(4 / 2));
-      const endPage = Math.min(this.totalPages, startPage + 4 - 1);
-
-      let pages = [];
-      if (startPage > 1) {
-        pages.push(1);
-
-        if (startPage > 2) {
-          pages.push('...');
-        }
-      }
-
-      for (let i = startPage; i <= endPage; i++) {
-        pages.push(i);
-      }
-
-      if (endPage < this.totalPages) {
-        if (endPage < this.totalPages - 1) {
-          pages.push('...');
-        }
-
-        pages.push(this.totalPages);
-      }
-
-      return pages;
-    },
   },
 
   computed: {
     displayedPages() {
-      return this.calculateDisplayedPages();
+        const startPage = Math.max(1, this.currentPage - Math.floor(4 / 2));
+        const endPage = Math.min(this.totalPages, startPage + 4 - 1);
+
+        let pages = [];
+        if (startPage > 1) {
+            pages.push(1);
+
+            if (startPage > 2) {
+                pages.push('...');
+            }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+            pages.push(i);
+        }
+
+        if (endPage < this.totalPages) {
+            if (endPage < this.totalPages - 1) {
+                pages.push('...');
+            }
+
+            pages.push(this.totalPages);
+        }
+
+        return pages;
     },
   },
 };

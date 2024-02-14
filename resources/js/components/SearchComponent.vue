@@ -10,7 +10,8 @@ export default {
   methods:{
     updateSearch(event){
       let searchValue = event.target.value;
-      this.$emit('getResources', 1, searchValue)
+      let page = 1;
+      this.$emit('getResources', page, searchValue)
       this.$emit('setSearch', searchValue);
     }
   },
