@@ -81,7 +81,6 @@ cd crud-laravel-vue
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan jwt:generate 
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/metospam/CRUD-laravel-vue.git
 cd crud-laravel-vue
