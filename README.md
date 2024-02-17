@@ -131,7 +131,7 @@ php artisan serve" tabindex="0" role="button">
 </svg>
     </clipboard-copy>
   </div></div>
-  <p dir="auto"><em><strong>Note</strong></em> : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command</p>
+  <p dir="auto">To send files through Telegram, you need to configure TELEGRAM_BOT_TOKEN, and to send files via email, you need to configure SMTP.</p>
   <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>php artisan migrate:refresh
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="php artisan migrate:refresh" tabindex="0" role="button">
